@@ -1,0 +1,64 @@
+<!NOTATION jpeg_fmt SYSTEM "image/jpeg">
+<!NOTATION avif_fmt SYSTEM "image/avif">
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image src ENTITY #REQUIRED>
+
+<!ENTITY img_key_mec   SYSTEM "./images/keyboard1.jpg"  NDATA jpeg_fmt>
+<!ENTITY img_key_erg   SYSTEM "./images/keyboard2.jpg"  NDATA jpeg_fmt>
+<!ENTITY img_mouse_mac SYSTEM "./images/mouse1.jpeg"    NDATA jpeg_fmt>
+<!ENTITY img_lap_mac   SYSTEM "./images/laptop1.jpg"    NDATA jpeg_fmt>
+<!ENTITY img_lap_dell  SYSTEM "./images/laptop2.avif"   NDATA avif_fmt>
+<!ENTITY img_lap_surf  SYSTEM "./images/laptop3.jpg"    NDATA jpeg_fmt>
+<!ENTITY img_desk_mac  SYSTEM "./images/desktop1.jpg"   NDATA jpeg_fmt>
+<!ENTITY img_mon_u24   SYSTEM "./images/monitor1.jpg"   NDATA jpeg_fmt>
+<!ENTITY img_mon_dell  SYSTEM "./images/monitor2.avif"  NDATA avif_fmt>
+
+<!ELEMENT catalog (brands, products)>
+<!ELEMENT brands (brand+)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT products (product+)>
+<!ELEMENT product (colors?, image?, name?, brand?, model?, price?, 
+                   os?, processor?, ram?, storage?,
+                   mouse?, dpi?, buttons?, connectivity?,
+                   keyboard?, type?, full-sized?, connectivity?,
+                   display?, resolution?, refreshRate?, diagonalSize?)
+>
+
+<!ELEMENT colors (color+)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT os (#PCDATA)>
+<!ELEMENT processor (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT storage (#PCDATA)>
+
+<!ELEMENT mouse (dpi, buttons, connectivity)>
+<!ELEMENT dpi (#PCDATA)>
+<!ELEMENT buttons (#PCDATA)>
+<!ELEMENT connectivity (#PCDATA)>
+
+<!ELEMENT keyboard (type, full-sized, connectivity)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT full-sized (#PCDATA)>
+
+<!ELEMENT display (resolution, refreshRate, diagonalSize)>  
+<!ELEMENT resolution (#PCDATA)>
+<!ELEMENT refreshRate (#PCDATA)>
+<!ELEMENT diagonalSize (#PCDATA)>
+
+<!ELEMENT Picture EMPTY>
+<!ATTLIST Picture 
+    source ENTITY #REQUIRED
+    alt CDATA #IMPLIED
+>
+<!ATTLIST catalog
+    xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation CDATA #FIXED "schema.xsd"
+>
+<!ATTLIST product xsi:type (keyboardType | mouseType | laptopType | desktopType | displayType) #REQUIRED>
+<!ATTLIST price currency (BGN | EUR) #REQUIRED>
+<!ATTLIST storage unit (GB | TB) #REQUIRED>

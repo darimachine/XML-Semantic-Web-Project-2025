@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="translator.xsl" type="text/xsl"?>
+<!DOCTYPE catalog SYSTEM "entities.dtd">
+
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="schema.xsd">
+    
+    <brands>
+        <brand>Razer</brand>
+        <brand>Alienware</brand>
+        <brand>Apple</brand>
+        <brand>Corsair</brand>
+        <brand>Asus</brand>
+    </brands>
+
+    <products>
+        <product xsi:type="keyboardType">
+            <colors>
+                <color>Matte Black</color>
+                <color>Mercury White</color>
+            </colors>
+            <image src="img_key_mec"/>
+            <name>Razer Huntsman Elite</name>
+            <brand>Razer</brand>
+            <model>RZ03-Opto</model>
+            <price currency="BGN">349.00</price>
+            
+            <type>mechanical</type>
+            <full-sized>true</full-sized>
+            <connectivity>wired</connectivity>
+        </product>
+
+        <product xsi:type="keyboardType">
+            <colors>
+                <color>Gunmetal Grey</color>
+            </colors>
+            <image src="img_key_erg"/>
+            <name>Corsair K100 Air Wireless</name>
+            <brand>Corsair</brand>
+            <model>CH-913A01U</model>
+            <price currency="EUR">279.99</price>
+            
+            <type>mechanical</type>
+            <full-sized>true</full-sized>
+            <connectivity>wireless</connectivity>
+        </product>
+
+        <product xsi:type="mouseType">
+            <image src="img_mouse_mac"/>
+            <name>Razer DeathAdder V3</name>
+            <brand>Razer</brand>
+            <model>DAV3-Pro</model>
+            <price currency="BGN">189.00</price>
+            
+            <dpi>30000</dpi>
+            <buttons>5</buttons>
+            <connectivity>wireless</connectivity>
+        </product>
+
+        <product xsi:type="laptopType">
+            <image src="img_lap_mac"/>
+            <name>MacBook Pro 16 M3 Max</name>
+            <brand>Apple</brand>
+            <model>MBP-16-MAX</model>
+            <price currency="BGN">8499.00</price>
+            
+            <os>MacOS</os>
+            <processor>M3 Max 16-Core</processor>
+            <ram>48</ram>
+            <storage unit="TB">1</storage>
+
+            <keyboard>
+                <type>membrane</type>
+                <full-sized>false</full-sized>
+                <connectivity>embedded</connectivity>
+            </keyboard>
+
+            <display>
+                <resolution>3456x2234</resolution>
+                <refreshRate>120</refreshRate>
+                <diagonalSize>16.2</diagonalSize>
+            </display>
+        </product>
+
+        <product xsi:type="laptopType">
+            <image src="img_lap_dell"/>
+            <name>Alienware x16 R1</name>
+            <brand>Alienware</brand>
+            <model>AW-X16-R1</model>
+            <price currency="EUR">3200.00</price>
+            
+            <os>Windows</os>
+            <processor>Intel Core i9-13900HK</processor>
+            <ram>32</ram>
+            <storage unit="TB">2</storage>
+
+            <keyboard>
+                <type>mechanical</type>
+                <full-sized>false</full-sized>
+                <connectivity>embedded</connectivity>
+            </keyboard>
+
+            <display>
+                <resolution>2560x1600</resolution>
+                <refreshRate>240</refreshRate>
+                <diagonalSize>16</diagonalSize>
+            </display>
+        </product>
+
+        <product xsi:type="laptopType">
+            <image src="img_lap_surf"/>
+            <name>Asus Zenbook Duo</name>
+            <brand>Asus</brand>
+            <model>UX8402</model>
+            <price currency="BGN">4100.00</price>
+            
+            <os>Windows</os>
+            <processor>Intel Core i7-12700H</processor>
+            <ram>16</ram>
+            <storage unit="GB">512</storage>
+
+            <keyboard>
+                <type>membrane</type>
+                <full-sized>false</full-sized>
+                <connectivity>embedded</connectivity>
+            </keyboard>
+
+            <display>
+                <resolution>2880x1800</resolution>
+                <refreshRate>120</refreshRate>
+                <diagonalSize>14.5</diagonalSize>
+            </display>
+        </product>
+
+        <product xsi:type="desktopType">
+            <image src="img_desk_mac"/>
+            <name>Mac Studio Ultra</name>
+            <brand>Apple</brand>
+            <model>Mac-Studio-U</model>
+            <price currency="EUR">4599.00</price>
+            
+            <os>MacOS</os>
+            <processor>M2 Ultra</processor>
+            <ram>64</ram>
+            <storage unit="TB">1</storage>
+        </product>
+
+        <product xsi:type="displayType">
+            <colors>
+                <color>Lunar Light</color>
+            </colors>
+            <image src="img_mon_u24"/>
+            <name>Alienware 34 Curved OLED</name>
+            <brand>Alienware</brand>
+            <model>AW3423DW</model>
+            <price currency="BGN">2199.00</price>
+
+            <resolution>3440 x 1440</resolution>
+            <refreshRate>175</refreshRate>
+            <diagonalSize>34</diagonalSize>
+        </product>
+
+        <product xsi:type="displayType">
+            <image src="img_mon_dell"/>
+            <name>Asus ROG Swift</name>
+            <brand>Asus</brand>
+            <model>PG27AQDM</model>
+            <price currency="EUR">1100.00</price>
+
+            <resolution>2560x1440</resolution>
+            <refreshRate>240</refreshRate>
+            <diagonalSize>27</diagonalSize>
+        </product>
+
+    </products>
+</catalog>

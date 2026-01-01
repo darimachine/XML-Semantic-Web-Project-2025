@@ -1,18 +1,18 @@
-<!NOTATION jpeg_fmt SYSTEM "image/jpeg">
-<!NOTATION avif_fmt SYSTEM "image/avif">
+<!NOTATION jpg SYSTEM "image/jpeg">
+<!NOTATION avif SYSTEM "image/avif">
 
 <!ELEMENT image EMPTY>
 <!ATTLIST image src ENTITY #REQUIRED>
 
-<!ENTITY img_key_mec   SYSTEM "./images/keyboard1.jpg"  NDATA jpeg_fmt>
-<!ENTITY img_key_erg   SYSTEM "./images/keyboard2.jpg"  NDATA jpeg_fmt>
-<!ENTITY img_mouse_mac SYSTEM "./images/mouse1.jpeg"    NDATA jpeg_fmt>
-<!ENTITY img_lap_mac   SYSTEM "./images/laptop1.jpg"    NDATA jpeg_fmt>
-<!ENTITY img_lap_dell  SYSTEM "./images/laptop2.avif"   NDATA avif_fmt>
-<!ENTITY img_lap_surf  SYSTEM "./images/laptop3.jpg"    NDATA jpeg_fmt>
-<!ENTITY img_desk_mac  SYSTEM "./images/desktop1.jpg"   NDATA jpeg_fmt>
-<!ENTITY img_mon_u24   SYSTEM "./images/monitor1.jpg"   NDATA jpeg_fmt>
-<!ENTITY img_mon_dell  SYSTEM "./images/monitor2.avif"  NDATA avif_fmt>
+<!ENTITY img_key_mec   SYSTEM "./images/keyboard1.jpg"  NDATA jpg>
+<!ENTITY img_key_erg   SYSTEM "./images/keyboard2.jpg"  NDATA jpg>
+<!ENTITY img_mouse_mac SYSTEM "./images/mouse1.jpeg"    NDATA jpg>
+<!ENTITY img_lap_mac   SYSTEM "./images/laptop1.jpg"    NDATA jpg>
+<!ENTITY img_lap_dell  SYSTEM "./images/laptop2.avif"   NDATA avif>
+<!ENTITY img_lap_surf  SYSTEM "./images/laptop3.jpg"    NDATA jpg>
+<!ENTITY img_desk_mac  SYSTEM "./images/desktop1.jpg"   NDATA jpg>
+<!ENTITY img_mon_u24   SYSTEM "./images/monitor1.jpg"   NDATA jpg>
+<!ENTITY img_mon_dell  SYSTEM "./images/monitor2.avif"  NDATA avif>
 
 <!ELEMENT catalog (brands, products)>
 <!ELEMENT brands (brand+)>

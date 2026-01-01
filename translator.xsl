@@ -52,7 +52,6 @@
                     text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
                 }
 
-                /* Layout */
                 .container {
                     max-width: 1400px;
                     margin: 0 auto;
@@ -62,7 +61,6 @@
                     gap: 2rem;
                 }
 
-                /* Sidebar Filters */
                 .sidebar {
                     background: var(--card-bg);
                     padding: 1.5rem;
@@ -109,14 +107,12 @@
                     border-color: var(--accent);
                 }
 
-                /* Product Grid */
                 #products-grid {
                     display: grid;
                     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                     gap: 20px;
                 }
 
-                /* Product Card */
                 .tech-card {
                     background: var(--card-bg);
                     border: 1px solid var(--border);
@@ -194,7 +190,6 @@
                     box-shadow: 0 0 15px var(--accent);
                 }
 
-                /* Detailed View (Modal Style) */
                 .modal-overlay {
                     position: fixed;
                     top: 0; left: 0; width: 100%; height: 100%;

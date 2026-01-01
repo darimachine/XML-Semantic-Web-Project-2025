@@ -1,0 +1,440 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1610pt" height="569pt" viewBox="0.00 0.00 1609.65 568.80">
+<g id="graph0" class="graph" transform="translate(5.024740456043446,561.9864191289913) scale(0.9999999999999956)" data-name="XSD_Types">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-564.8 1605.65,-564.8 1605.65,4 -4,4"/>
+<!-- catalog -->
+<g id="node1" class="node" pointer-events="visible" data-name="catalog">
+
+<ellipse fill="none" stroke="rgb(0, 0, 0)" cx="155" cy="-454" rx="38.84" ry="18"/>
+<text text-anchor="middle" x="155" y="-449.8" font-family="Times,serif" font-size="14.00">catalog</text>
+</g>
+<!-- BrandList -->
+<g id="node2" class="node" pointer-events="visible" data-name="BrandList">
+
+<polygon fill="none" stroke="black" points="71.99,-290 0,-290 0,-254 71.99,-254 71.99,-290"/>
+<text text-anchor="middle" x="36" y="-267.8" font-family="Times,serif" font-size="14.00">BrandList</text>
+</g>
+<!-- catalog&#45;&gt;BrandList -->
+<g id="edge1" class="edge" data-name="catalog-&gt;BrandList">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M123.09,-443.21C96.03,-433.02 58.98,-414.12 42,-383.2 28.25,-358.17 28.48,-324.94 31.06,-301.54"/>
+<polygon fill="black" stroke="black" points="34.51,-302.17 32.37,-291.79 27.57,-301.24 34.51,-302.17"/>
+<text text-anchor="middle" x="91.66" y="-405.4" font-family="Times,serif" font-size="14.00">brands</text>
+</g>
+<!-- ProductInventory -->
+<g id="node3" class="node" pointer-events="visible" data-name="ProductInventory">
+
+<polygon fill="none" stroke="black" points="164.98,-363.6 51.02,-363.6 51.02,-327.6 164.98,-327.6 164.98,-363.6"/>
+<text text-anchor="middle" x="108" y="-341.4" font-family="Times,serif" font-size="14.00">ProductInventory</text>
+</g>
+<!-- catalog&#45;&gt;ProductInventory -->
+<g id="edge2" class="edge" data-name="catalog-&gt;ProductInventory">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M146.99,-435.95C144.34,-430.26 141.41,-423.87 138.78,-418 132.37,-403.65 125.42,-387.59 119.75,-374.34"/>
+<polygon fill="black" stroke="black" points="123.07,-373.19 115.93,-365.36 116.63,-375.93 123.07,-373.19"/>
+<text text-anchor="middle" x="163.1" y="-405.4" font-family="Times,serif" font-size="14.00">products</text>
+</g>
+<!-- pkBrand -->
+<g id="node23" class="node" pointer-events="visible" data-name="pkBrand">
+
+<polygon fill="none" stroke="black" points="301.01,-236.2 166.99,-236.2 166.99,-177.4 307.01,-177.4 307.01,-230.2 301.01,-236.2"/>
+<polyline fill="none" stroke="black" points="301.01,-236.2 301.01,-230.2"/>
+<polyline fill="none" stroke="black" points="307.01,-230.2 301.01,-230.2"/>
+<text text-anchor="middle" x="237" y="-219.4" font-family="Times,serif" font-size="14.00">xs:key pkBrand</text>
+<text text-anchor="middle" x="237" y="-202.6" font-family="Times,serif" font-size="14.00">selector: brands/brand</text>
+<text text-anchor="middle" x="237" y="-185.8" font-family="Times,serif" font-size="14.00">field: .</text>
+</g>
+<!-- catalog&#45;&gt;pkBrand -->
+<g id="edge38" class="edge" data-name="catalog-&gt;pkBrand">
+
+<path fill="none" stroke="rgb(0, 0, 0)" stroke-dasharray="5,2" d="M172.32,-437.67C177.77,-432 183.32,-425.18 187,-418 209.72,-373.54 198.18,-356.56 209.79,-308 214.58,-287.96 220.52,-265.85 225.62,-247.5"/>
+<polygon fill="black" stroke="black" points="228.93,-248.65 228.26,-238.08 222.19,-246.76 228.93,-248.65"/>
+<text text-anchor="middle" x="237.6" y="-341.4" font-family="Times,serif" font-size="14.00">constraint</text>
+</g>
+<!-- fkBrandProduct -->
+<g id="node24" class="node" pointer-events="visible" data-name="fkBrandProduct">
+
+<polygon fill="none" stroke="black" points="429.79,-383.3 274.21,-383.3 274.21,-307.9 435.79,-307.9 435.79,-377.3 429.79,-383.3"/>
+<polyline fill="none" stroke="black" points="429.79,-383.3 429.79,-377.3"/>
+<polyline fill="none" stroke="black" points="435.79,-377.3 429.79,-377.3"/>
+<text text-anchor="middle" x="355" y="-366.6" font-family="Times,serif" font-size="14.00">xs:keyref fkBrandProduct</text>
+<text text-anchor="middle" x="355" y="-349.8" font-family="Times,serif" font-size="14.00">selector: products/product</text>
+<text text-anchor="middle" x="355" y="-333" font-family="Times,serif" font-size="14.00">field: brand</text>
+<text text-anchor="middle" x="355" y="-316.2" font-family="Times,serif" font-size="14.00">refer: pkBrand</text>
+</g>
+<!-- catalog&#45;&gt;fkBrandProduct -->
+<g id="edge39" class="edge" data-name="catalog-&gt;fkBrandProduct">
+
+<path fill="none" stroke="rgb(0, 0, 0)" stroke-dasharray="5,2" d="M179.92,-439.74C203.84,-427.01 241.27,-407.1 275.39,-388.95"/>
+<polygon fill="black" stroke="black" points="276.86,-392.13 284.05,-384.34 273.58,-385.95 276.86,-392.13"/>
+<text text-anchor="middle" x="277.6" y="-405.4" font-family="Times,serif" font-size="14.00">constraint</text>
+</g>
+<!-- xs:string -->
+<g id="node18" class="node" pointer-events="visible" data-name="xstring" data-comment="xs:string">
+
+<polygon fill="none" stroke="black" points="789.22,-36 724.77,-36 724.77,0 789.22,0 789.22,-36"/>
+<text text-anchor="middle" x="757" y="-13.8" font-family="Times,serif" font-size="14.00">xs:string</text>
+</g>
+<!-- BrandList&#45;&gt;xs:string -->
+<g id="edge37" class="edge" data-name="BrandList-&gt;xstring" data-comment="BrandList-&gt;xs:string">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M45.86,-253.58C71.46,-210.35 144.77,-98.42 241,-54 276.55,-37.59 553.95,-39.02 593,-36 633.84,-32.84 680.28,-27.9 713.29,-24.16"/>
+<polygon fill="black" stroke="black" points="713.33,-27.68 722.87,-23.06 712.53,-20.72 713.33,-27.68"/>
+<text text-anchor="middle" x="151.1" y="-147" font-family="Times,serif" font-size="14.00">brand[*]</text>
+</g>
+<!-- baseItemType -->
+<g id="node4" class="node" pointer-events="visible" data-name="baseItemType">
+
+<polygon fill="none" stroke="black" points="457.79,-224.8 362.2,-224.8 362.2,-188.8 457.79,-188.8 457.79,-224.8"/>
+<text text-anchor="middle" x="410" y="-202.6" font-family="Times,serif" font-size="14.00">baseItemType</text>
+</g>
+<!-- ProductInventory&#45;&gt;baseItemType -->
+<g id="edge3" class="edge" data-name="ProductInventory-&gt;baseItemType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M123.26,-327.14C142.61,-306.21 178.03,-271.75 215.91,-254 256.83,-234.82 272.04,-246.51 316,-236 327.42,-233.27 339.52,-229.96 351.09,-226.59"/>
+<polygon fill="black" stroke="black" points="351.94,-229.99 360.53,-223.78 349.94,-223.28 351.94,-229.99"/>
+<text text-anchor="middle" x="245.54" y="-267.8" font-family="Times,serif" font-size="14.00">product[*]</text>
+</g>
+<!-- MoneyType -->
+<g id="node5" class="node" pointer-events="visible" data-name="MoneyType">
+
+<polygon fill="none" stroke="black" points="332.43,-124.8 247.57,-124.8 247.57,-88.8 332.43,-88.8 332.43,-124.8"/>
+<text text-anchor="middle" x="290" y="-102.6" font-family="Times,serif" font-size="14.00">MoneyType</text>
+</g>
+<!-- baseItemType&#45;&gt;MoneyType -->
+<g id="edge11" class="edge" data-name="baseItemType-&gt;MoneyType">
+
+<path fill="none" stroke="black" d="M388.82,-188.51C369.74,-172.93 341.49,-149.86 320.08,-132.37"/>
+<polygon fill="black" stroke="black" points="322.5,-129.82 312.54,-126.21 318.07,-135.25 322.5,-129.82"/>
+<text text-anchor="middle" x="367.09" y="-147" font-family="Times,serif" font-size="14.00">price?</text>
+</g>
+<!-- colorsType -->
+<g id="node12" class="node" pointer-events="visible" data-name="colorsType">
+
+<polygon fill="none" stroke="black" points="469.51,-124.8 350.48,-124.8 350.48,-88.8 469.51,-88.8 469.51,-124.8"/>
+<text text-anchor="middle" x="410" y="-102.6" font-family="Times,serif" font-size="14.00">(anon) colorsType</text>
+</g>
+<!-- baseItemType&#45;&gt;colorsType -->
+<g id="edge4" class="edge" data-name="baseItemType-&gt;colorsType">
+
+<path fill="none" stroke="black" d="M410,-188.73C410,-174.34 410,-153.45 410,-136.5"/>
+<polygon fill="black" stroke="black" points="413.5,-136.52 410,-126.52 406.5,-136.52 413.5,-136.52"/>
+<text text-anchor="middle" x="430.21" y="-147" font-family="Times,serif" font-size="14.00">colors?</text>
+</g>
+<!-- imageType -->
+<g id="node13" class="node" pointer-events="visible" data-name="imageType">
+
+<polygon fill="none" stroke="black" points="606.51,-124.8 487.49,-124.8 487.49,-88.8 606.51,-88.8 606.51,-124.8"/>
+<text text-anchor="middle" x="547" y="-102.6" font-family="Times,serif" font-size="14.00">(anon) imageType</text>
+</g>
+<!-- baseItemType&#45;&gt;imageType -->
+<g id="edge6" class="edge" data-name="baseItemType-&gt;imageType">
+
+<path fill="none" stroke="black" d="M434.17,-188.51C456.15,-172.79 488.78,-149.44 513.31,-131.9"/>
+<polygon fill="black" stroke="black" points="515.27,-134.8 521.37,-126.13 511.2,-129.1 515.27,-134.8"/>
+<text text-anchor="middle" x="514.21" y="-147" font-family="Times,serif" font-size="14.00">image?</text>
+</g>
+<!-- baseItemType&#45;&gt;xs:string -->
+<g id="edge8" class="edge" data-name="baseItemType-&gt;xstring" data-comment="baseItemType-&gt;xs:string">
+
+<path fill="none" stroke="black" d="M441.43,-188.44C449.3,-184.52 457.83,-180.63 466,-177.6 496.92,-166.11 506.82,-170.36 538,-159.6 573.88,-147.22 583.53,-144.47 616,-124.8 638.04,-111.44 641.21,-104.74 661.47,-88.8 681.21,-73.27 685.74,-68.85 706,-54 710.98,-50.35 716.29,-46.57 721.54,-42.91"/>
+<polygon fill="black" stroke="black" points="723.35,-45.92 729.59,-37.36 719.37,-40.16 723.35,-45.92"/>
+<text text-anchor="middle" x="679.26" y="-102.6" font-family="Times,serif" font-size="14.00">name?</text>
+</g>
+<!-- baseItemType&#45;&gt;xs:string -->
+<g id="edge9" class="edge" data-name="baseItemType-&gt;xstring" data-comment="baseItemType-&gt;xs:string">
+
+<path fill="none" stroke="black" d="M440.39,-188.42C448.5,-184.36 457.41,-180.41 466,-177.6 566.51,-144.75 614.97,-190.29 698,-124.8 723.23,-104.9 739.36,-71.06 748.26,-47.02" style=""/>
+<polygon fill="black" stroke="black" points="751.47,-48.45 751.46,-37.85 744.86,-46.14 751.47,-48.45"/>
+<text text-anchor="middle" x="746.04" y="-102.6" font-family="Times,serif" font-size="14.00" style="">brand?</text>
+</g>
+<!-- baseItemType&#45;&gt;xs:string -->
+<g id="edge10" class="edge" data-name="baseItemType-&gt;xstring" data-comment="baseItemType-&gt;xs:string">
+
+<path fill="none" stroke="black" d="M439.38,-188.42C447.72,-184.21 457,-180.18 466,-177.6 531.7,-158.77 728.83,-180.1 769,-124.8 785.33,-102.31 778.34,-69.73 769.78,-46.68" style=""/>
+<polygon fill="black" stroke="black" points="773.11,-45.58 766.12,-37.62 766.62,-48.2 773.11,-45.58"/>
+<text text-anchor="middle" x="798.6" y="-102.6" font-family="Times,serif" font-size="14.00" style="">model?</text>
+</g>
+<!-- MoneyCurrencyEnum -->
+<g id="node15" class="node" pointer-events="visible" data-name="MoneyCurrencyEnum">
+
+<ellipse fill="none" stroke="black" cx="243" cy="-18" rx="145.83" ry="18"/>
+<text text-anchor="middle" x="243" y="-13.8" font-family="Times,serif" font-size="14.00">(anon) MoneyType.currency enum</text>
+</g>
+<!-- MoneyType&#45;&gt;MoneyCurrencyEnum -->
+<g id="edge13" class="edge" data-name="MoneyType-&gt;MoneyCurrencyEnum">
+
+<path fill="none" stroke="black" d="M264.41,-88.56C258.69,-83.5 253.26,-77.5 249.67,-70.8 245.92,-63.79 243.95,-55.51 242.99,-47.65"/>
+<polygon fill="black" stroke="black" points="246.49,-47.5 242.3,-37.77 239.5,-47.99 246.49,-47.5"/>
+<text text-anchor="middle" x="310.66" y="-58.2" font-family="Times,serif" font-size="14.00">@currency (required)</text>
+</g>
+<!-- xs:decimal -->
+<g id="node20" class="node" pointer-events="visible" data-name="xs:decimal">
+
+<polygon fill="none" stroke="black" points="483.15,-36 406.85,-36 406.85,0 483.15,0 483.15,-36"/>
+<text text-anchor="middle" x="445" y="-13.8" font-family="Times,serif" font-size="14.00">xs:decimal</text>
+</g>
+<!-- MoneyType&#45;&gt;xs:decimal -->
+<g id="edge12" class="edge" data-name="MoneyType-&gt;xs:decimal">
+
+<path fill="none" stroke="black" d="M332.82,-89.22C345.37,-83.84 358.96,-77.52 371,-70.8 385.65,-62.62 400.98,-52.22 413.87,-42.9"/>
+<polygon fill="black" stroke="black" points="415.58,-45.99 421.56,-37.24 411.43,-40.35 415.58,-45.99"/>
+<text text-anchor="middle" x="417.38" y="-58.2" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- ConnectionEnum -->
+<g id="node6" class="node" pointer-events="visible" data-name="ConnectionEnum">
+
+<ellipse fill="none" stroke="black" cx="554" cy="-206.8" rx="78.75" ry="18"/>
+<text text-anchor="middle" x="554" y="-202.6" font-family="Times,serif" font-size="14.00">ConnectionEnum</text>
+</g>
+<!-- keyboardType -->
+<g id="node7" class="node" pointer-events="visible" data-name="keyboardType">
+
+<polygon fill="none" stroke="black" points="711.35,-363.6 614.64,-363.6 614.64,-327.6 711.35,-327.6 711.35,-363.6"/>
+<text text-anchor="middle" x="663" y="-341.4" font-family="Times,serif" font-size="14.00">keyboardType</text>
+</g>
+<!-- keyboardType&#45;&gt;baseItemType -->
+<g id="edge14" class="edge" data-name="keyboardType-&gt;baseItemType">
+
+<path fill="none" stroke="black" d="M614.47,-334.89C582.6,-326.76 541.22,-312.75 510.23,-290 494.06,-278.13 497.76,-267.58 483,-254 473.87,-245.6 463.02,-237.81 452.52,-231.11"/>
+<polygon fill="black" stroke="black" points="454.67,-228.32 444.32,-226.07 451,-234.29 454.67,-228.32"/>
+<text text-anchor="middle" x="531.38" y="-267.8" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- keyboardType&#45;&gt;ConnectionEnum -->
+<g id="edge21" class="edge" data-name="keyboardType-&gt;ConnectionEnum">
+
+<path fill="none" stroke="black" d="M618.44,-327.19C601.46,-318.44 583.41,-306.19 571.8,-290 560.7,-274.53 556.29,-253.5 554.63,-236.59"/>
+<polygon fill="black" stroke="black" points="558.13,-236.39 553.96,-226.65 551.14,-236.86 558.13,-236.39"/>
+<text text-anchor="middle" x="605.6" y="-267.8" font-family="Times,serif" font-size="14.00">connectivity</text>
+</g>
+<!-- KeyboardKindEnum -->
+<g id="node17" class="node" pointer-events="visible" data-name="KeyboardKindEnum">
+
+<ellipse fill="none" stroke="black" cx="788" cy="-206.8" rx="137.17" ry="18"/>
+<text text-anchor="middle" x="788" y="-202.6" font-family="Times,serif" font-size="14.00">(anon) keyboardType.type enum</text>
+</g>
+<!-- keyboardType&#45;&gt;KeyboardKindEnum -->
+<g id="edge19" class="edge" data-name="keyboardType-&gt;KeyboardKindEnum">
+
+<path fill="none" stroke="black" d="M657.77,-327.16C653.02,-307.5 648.8,-275.5 663.89,-254 672.37,-241.93 684.39,-233.01 697.64,-226.41"/>
+<polygon fill="black" stroke="black" points="698.89,-229.69 706.6,-222.43 696.04,-223.3 698.89,-229.69"/>
+<text text-anchor="middle" x="675.05" y="-267.8" font-family="Times,serif" font-size="14.00">type</text>
+</g>
+<!-- xs:boolean -->
+<g id="node21" class="node" pointer-events="visible" data-name="xs:boolean">
+
+<polygon fill="none" stroke="black" points="1020.15,-224.8 943.84,-224.8 943.84,-188.8 1020.15,-188.8 1020.15,-224.8"/>
+<text text-anchor="middle" x="982" y="-202.6" font-family="Times,serif" font-size="14.00">xs:boolean</text>
+</g>
+<!-- keyboardType&#45;&gt;xs:boolean -->
+<g id="edge20" class="edge" data-name="keyboardType-&gt;xs:boolean">
+
+<path fill="none" stroke="black" d="M671.04,-327.38C682.89,-302.37 704.36,-258.45 711.13,-254 752.65,-226.71 886.62,-250.96 934,-236 938.46,-234.59 942.94,-232.71 947.29,-230.58"/>
+<polygon fill="black" stroke="black" points="948.63,-233.83 955.76,-226 945.3,-227.68 948.63,-233.83"/>
+<text text-anchor="middle" x="737.43" y="-267.8" font-family="Times,serif" font-size="14.00">full-sized</text>
+</g>
+<!-- mouseType -->
+<g id="node8" class="node" pointer-events="visible" data-name="mouseType">
+
+<polygon fill="none" stroke="black" points="984.81,-363.6 903.18,-363.6 903.18,-327.6 984.81,-327.6 984.81,-363.6"/>
+<text text-anchor="middle" x="944" y="-341.4" font-family="Times,serif" font-size="14.00">mouseType</text>
+</g>
+<!-- mouseType&#45;&gt;baseItemType -->
+<g id="edge15" class="edge" data-name="mouseType-&gt;baseItemType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M902.87,-339.24C867.66,-332.8 817.39,-318.99 783.23,-290 769.4,-278.26 779.27,-263.79 764,-254 708.15,-218.19 530.05,-253.27 466,-236 460.42,-234.5 454.76,-232.41 449.28,-230.04"/>
+<polygon fill="black" stroke="black" points="450.94,-226.95 440.4,-225.86 447.96,-233.29 450.94,-226.95"/>
+<text text-anchor="middle" x="804.38" y="-267.8" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- mouseType&#45;&gt;ConnectionEnum -->
+<g id="edge24" class="edge" data-name="mouseType-&gt;ConnectionEnum">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M912.39,-327.24C895.87,-317.41 875.8,-304.25 859.8,-290 844.28,-276.19 848.35,-263.73 830,-254 792.91,-234.34 683.11,-244.45 642,-236 629.84,-233.5 617.01,-229.94 605,-226.18"/>
+<polygon fill="black" stroke="black" points="606.29,-222.92 595.7,-223.17 604.13,-229.58 606.29,-222.92"/>
+<text text-anchor="middle" x="893.6" y="-267.8" font-family="Times,serif" font-size="14.00">connectivity</text>
+</g>
+<!-- xs:positiveInteger -->
+<g id="node22" class="node" pointer-events="visible" data-name="xs:positiveInteger">
+
+<polygon fill="none" stroke="black" points="1192.31,-224.8 1075.69,-224.8 1075.69,-188.8 1192.31,-188.8 1192.31,-224.8"/>
+<text text-anchor="middle" x="1134" y="-202.6" font-family="Times,serif" font-size="14.00">xs:positiveInteger</text>
+</g>
+<!-- mouseType&#45;&gt;xs:positiveInteger -->
+<g id="edge22" class="edge" data-name="mouseType-&gt;xs:positiveInteger">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M938.46,-327.45C933.18,-307.47 928.27,-274.57 945.11,-254 969.26,-224.49 991.93,-244.95 1029,-236 1040.4,-233.25 1052.45,-230.17 1064.17,-227.09"/>
+<polygon fill="black" stroke="black" points="1065.04,-230.48 1073.8,-224.53 1063.24,-223.71 1065.04,-230.48"/>
+<text text-anchor="middle" x="953.94" y="-267.8" font-family="Times,serif" font-size="14.00">dpi</text>
+</g>
+<!-- mouseType&#45;&gt;xs:positiveInteger -->
+<g id="edge23" class="edge" data-name="mouseType-&gt;xs:positiveInteger">
+
+<path fill="none" stroke="black" d="M950.04,-327.33C958.51,-304 974.18,-264.17 985.77,-254 992.24,-248.32 1029.18,-236.8 1064.56,-226.68" style=""/>
+<polygon fill="black" stroke="black" points="1065.33,-230.1 1074,-224.01 1063.43,-223.37 1065.33,-230.1"/>
+<text text-anchor="middle" x="1005.61" y="-267.8" font-family="Times,serif" font-size="14.00" style="">buttons</text>
+</g>
+<!-- laptopType -->
+<g id="node9" class="node" pointer-events="visible" data-name="laptopType">
+
+<polygon fill="none" stroke="black" points="1237.76,-472 1158.24,-472 1158.24,-436 1237.76,-436 1237.76,-472"/>
+<text text-anchor="middle" x="1198" y="-449.8" font-family="Times,serif" font-size="14.00">laptopType</text>
+</g>
+<!-- laptopType&#45;&gt;baseItemType -->
+<g id="edge16" class="edge" data-name="laptopType-&gt;baseItemType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1157.85,-452.35C1035.22,-449.79 667.53,-437.65 563.23,-383.2 498.08,-349.19 448.2,-275.06 424.75,-234.92"/>
+<polygon fill="black" stroke="black" points="427.85,-233.29 419.85,-226.34 421.77,-236.76 427.85,-233.29"/>
+<text text-anchor="middle" x="584.38" y="-341.4" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- laptopType&#45;&gt;keyboardType -->
+<g id="edge32" class="edge" data-name="laptopType-&gt;keyboardType">
+
+<path fill="none" stroke="black" d="M1157.91,-445.78C1119.76,-438.86 1060.76,-428 1009.69,-418 908.86,-398.25 791.86,-373.84 722.81,-359.29"/>
+<polygon fill="black" stroke="black" points="723.73,-355.9 713.22,-357.26 722.28,-362.75 723.73,-355.9"/>
+<text text-anchor="middle" x="1038.15" y="-405.4" font-family="Times,serif" font-size="14.00">keyboard?</text>
+</g>
+<!-- laptopType&#45;&gt;mouseType -->
+<g id="edge31" class="edge" data-name="laptopType-&gt;mouseType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1158.12,-437.59C1142.79,-431.59 1125.15,-424.58 1109.23,-418 1070.14,-401.85 1026.19,-382.82 993.46,-368.47"/>
+<polygon fill="black" stroke="black" points="995.19,-365.41 984.63,-364.59 992.37,-371.82 995.19,-365.41"/>
+<text text-anchor="middle" x="1130.38" y="-405.4" font-family="Times,serif" font-size="14.00">mouse?</text>
+</g>
+<!-- displayType -->
+<g id="node11" class="node" pointer-events="visible" data-name="displayType">
+
+<polygon fill="none" stroke="black" points="1179.7,-363.6 1094.29,-363.6 1094.29,-327.6 1179.7,-327.6 1179.7,-363.6"/>
+<text text-anchor="middle" x="1137" y="-341.4" font-family="Times,serif" font-size="14.00">displayType</text>
+</g>
+<!-- laptopType&#45;&gt;displayType -->
+<g id="edge33" class="edge" data-name="laptopType-&gt;displayType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1179.32,-435.55C1174.33,-430.25 1169.25,-424.18 1165.34,-418 1156.87,-404.62 1150.16,-388.29 1145.4,-374.62"/>
+<polygon fill="black" stroke="black" points="1148.79,-373.73 1142.34,-365.33 1142.14,-375.93 1148.79,-373.73"/>
+<text text-anchor="middle" x="1188.32" y="-405.4" font-family="Times,serif" font-size="14.00">display?</text>
+</g>
+<!-- storageType -->
+<g id="node14" class="node" pointer-events="visible" data-name="storageType">
+
+<polygon fill="none" stroke="black" points="1322.73,-363.6 1197.26,-363.6 1197.26,-327.6 1322.73,-327.6 1322.73,-363.6"/>
+<text text-anchor="middle" x="1260" y="-341.4" font-family="Times,serif" font-size="14.00">(anon) storageType</text>
+</g>
+<!-- laptopType&#45;&gt;storageType -->
+<g id="edge28" class="edge" data-name="laptopType-&gt;storageType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1207.96,-435.9C1217.71,-419.17 1232.71,-393.42 1244.11,-373.86"/>
+<polygon fill="black" stroke="black" points="1247.08,-375.72 1249.09,-365.31 1241.03,-372.19 1247.08,-375.72"/>
+<text text-anchor="middle" x="1247.21" y="-405.4" font-family="Times,serif" font-size="14.00">storage</text>
+</g>
+<!-- laptopType&#45;&gt;xs:string -->
+<g id="edge25" class="edge" data-name="laptopType-&gt;xstring" data-comment="laptopType-&gt;xs:string">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1238.1,-447.47C1320.25,-435.02 1500,-401.49 1500,-346.6 1500,-346.6 1500,-346.6 1500,-105.8 1500,-34.93 959.78,-21.81 800.62,-19.48"/>
+<polygon fill="black" stroke="black" points="800.96,-15.99 790.91,-19.35 800.86,-22.99 800.96,-15.99"/>
+<text text-anchor="middle" x="1506.22" y="-202.6" font-family="Times,serif" font-size="14.00">os</text>
+</g>
+<!-- laptopType&#45;&gt;xs:string -->
+<g id="edge26" class="edge" data-name="laptopType-&gt;xstring" data-comment="laptopType-&gt;xs:string">
+
+<path fill="none" stroke="black" d="M1238.15,-449.36C1330.08,-439.91 1548,-410.74 1548,-346.6 1548,-346.6 1548,-346.6 1548,-105.8 1548,-89.19 1504.17,-71.44 1419,-54 1300.23,-29.68 928.61,-21.68 800.74,-19.62" style=""/>
+<polygon fill="black" stroke="black" points="801.06,-16.12 791,-19.46 800.95,-23.12 801.06,-16.12"/>
+<text text-anchor="middle" x="1574.82" y="-202.6" font-family="Times,serif" font-size="14.00" style="">processor</text>
+</g>
+<!-- laptopType&#45;&gt;xs:positiveInteger -->
+<g id="edge27" class="edge" data-name="laptopType-&gt;xs:positiveInteger">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1238.21,-452.12C1328.38,-449.72 1540.55,-441.61 1562,-418 1567.02,-412.47 1564.72,-408.15 1562,-401.2 1529.54,-318.25 1505.79,-293.58 1426,-254 1388.6,-235.45 1280.08,-243.44 1239,-236 1227.27,-233.88 1214.93,-231.08 1203,-228.08"/>
+<polygon fill="black" stroke="black" points="1204.22,-224.78 1193.66,-225.66 1202.46,-231.56 1204.22,-224.78"/>
+<text text-anchor="middle" x="1564.88" y="-341.4" font-family="Times,serif" font-size="14.00">ram</text>
+</g>
+<!-- desktopType -->
+<g id="node10" class="node" pointer-events="visible" data-name="desktopType">
+
+<polygon fill="none" stroke="black" points="1242.31,-560.8 1153.68,-560.8 1153.68,-524.8 1242.31,-524.8 1242.31,-560.8"/>
+<text text-anchor="middle" x="1198" y="-538.6" font-family="Times,serif" font-size="14.00">desktopType</text>
+</g>
+<!-- desktopType&#45;&gt;laptopType -->
+<g id="edge18" class="edge" data-name="desktopType-&gt;laptopType">
+
+<path fill="none" stroke="black" d="M1198,-524.65C1198,-512.96 1198,-497.19 1198,-483.62"/>
+<polygon fill="black" stroke="black" points="1201.5,-483.92 1198,-473.92 1194.5,-483.92 1201.5,-483.92"/>
+<text text-anchor="middle" x="1219.38" y="-494.2" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- displayType&#45;&gt;baseItemType -->
+<g id="edge17" class="edge" data-name="displayType-&gt;baseItemType">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1101.99,-327.22C1085.1,-317.73 1065.29,-304.89 1050.23,-290 1036.69,-276.61 1043.57,-263.38 1027,-254 972.72,-223.29 526.43,-251.39 466,-236 460.34,-234.56 454.6,-232.49 449.05,-230.11"/>
+<polygon fill="black" stroke="black" points="450.61,-226.97 440.07,-225.88 447.63,-233.31 450.61,-226.97"/>
+<text text-anchor="middle" x="1071.38" y="-267.8" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- displayType&#45;&gt;xs:string -->
+<g id="edge34" class="edge" data-name="displayType-&gt;xstring" data-comment="displayType-&gt;xs:string">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1131.63,-327.4C1124.94,-307.97 1112,-276.17 1093,-254 1083.85,-243.33 1076.79,-246.08 1067,-236 1045.42,-213.79 1051.42,-198.95 1029,-177.6 959.45,-111.38 857.26,-61.36 799.98,-36.48"/>
+<polygon fill="black" stroke="black" points="801.45,-33.31 790.88,-32.59 798.7,-39.74 801.45,-33.31"/>
+<text text-anchor="middle" x="1034.99" y="-147" font-family="Times,serif" font-size="14.00">resolution</text>
+</g>
+<!-- displayType&#45;&gt;xs:decimal -->
+<g id="edge36" class="edge" data-name="displayType-&gt;xs:decimal">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1162.66,-327.23C1179.59,-315.15 1199.46,-299.56 1204,-290 1212.72,-271.64 1214.9,-194.86 1201,-177.6 1040.04,22.26 890.55,-93.53 637,-54 576.63,-44.59 557.74,-50.18 494.54,-36.02"/>
+<polygon fill="black" stroke="black" points="495.56,-32.66 485.03,-33.81 493.97,-39.48 495.56,-32.66"/>
+<text text-anchor="middle" x="1218.15" y="-147" font-family="Times,serif" font-size="14.00">diagonalSize</text>
+</g>
+<!-- displayType&#45;&gt;xs:positiveInteger -->
+<g id="edge35" class="edge" data-name="displayType-&gt;xs:positiveInteger">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1136.62,-327.27C1136.11,-304.35 1135.22,-263.65 1134.62,-236.2"/>
+<polygon fill="black" stroke="black" points="1138.13,-236.42 1134.41,-226.5 1131.13,-236.57 1138.13,-236.42"/>
+<text text-anchor="middle" x="1167.26" y="-267.8" font-family="Times,serif" font-size="14.00">refreshRate</text>
+</g>
+<!-- colorsType&#45;&gt;xs:string -->
+<g id="edge5" class="edge" data-name="colorsType-&gt;xstring" data-comment="colorsType-&gt;xs:string">
+
+<path fill="none" stroke="black" d="M432.16,-88.49C448.35,-76.79 471.33,-62.05 493.91,-54 514.06,-46.81 643.48,-31.63 712.99,-23.84"/>
+<polygon fill="black" stroke="black" points="713.37,-27.32 722.92,-22.73 712.59,-20.36 713.37,-27.32"/>
+<text text-anchor="middle" x="515.54" y="-58.2" font-family="Times,serif" font-size="14.00">color[*]</text>
+</g>
+<!-- xs:ENTITY -->
+<g id="node19" class="node" pointer-events="visible" data-name="xs:ENTITY">
+
+<polygon fill="none" stroke="black" points="584.37,-36 501.62,-36 501.62,0 584.37,0 584.37,-36"/>
+<text text-anchor="middle" x="543" y="-13.8" font-family="Times,serif" font-size="14.00">xs:ENTITY</text>
+</g>
+<!-- imageType&#45;&gt;xs:ENTITY -->
+<g id="edge7" class="edge" data-name="imageType-&gt;xs:ENTITY">
+
+<path fill="none" stroke="black" d="M545.48,-88.36C545.04,-82.76 544.61,-76.52 544.31,-70.8 543.93,-63.34 543.66,-55.28 543.47,-47.78"/>
+<polygon fill="black" stroke="black" points="546.97,-47.71 543.25,-37.79 539.97,-47.86 546.97,-47.71"/>
+<text text-anchor="middle" x="588.34" y="-58.2" font-family="Times,serif" font-size="14.00">@src (required)</text>
+</g>
+<!-- StorageUnitEnum -->
+<g id="node16" class="node" pointer-events="visible" data-name="StorageUnitEnum">
+
+<ellipse fill="none" stroke="rgb(0, 0, 0)" cx="1356" cy="-206.8" rx="107.69" ry="18"/>
+<text text-anchor="middle" x="1356" y="-202.6" font-family="Times,serif" font-size="14.00">(anon) storage.unit enum</text>
+</g>
+<!-- storageType&#45;&gt;StorageUnitEnum -->
+<g id="edge30" class="edge" data-name="storageType-&gt;StorageUnitEnum">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1275.2,-327.37C1284.23,-316.85 1295.69,-302.98 1305,-290 1317.89,-272.03 1331.01,-250.8 1340.71,-234.42"/>
+<polygon fill="black" stroke="black" points="1343.48,-236.62 1345.52,-226.22 1337.44,-233.08 1343.48,-236.62"/>
+<text text-anchor="middle" x="1375.07" y="-267.8" font-family="Times,serif" font-size="14.00">@unit (required)</text>
+</g>
+<!-- storageType&#45;&gt;xs:positiveInteger -->
+<g id="edge29" class="edge" data-name="storageType-&gt;xs:positiveInteger">
+
+<path fill="none" stroke="rgb(0, 0, 0)" d="M1252.2,-327.4C1242.78,-307.96 1225.51,-276.16 1204,-254 1195.86,-245.62 1185.94,-237.95 1176.17,-231.37"/>
+<polygon fill="black" stroke="black" points="1178.08,-228.44 1167.78,-225.99 1174.3,-234.34 1178.08,-228.44"/>
+<text text-anchor="middle" x="1251.38" y="-267.8" font-family="Times,serif" font-size="14.00">extends</text>
+</g>
+<!-- fkBrandProduct&#45;&gt;pkBrand -->
+<g id="edge40" class="edge" data-name="fkBrandProduct-&gt;pkBrand">
+
+<path fill="none" stroke="rgb(0, 0, 0)" stroke-dasharray="5,2" d="M323.06,-307.58C306.37,-288.23 285.99,-264.6 269.25,-245.2"/>
+<polygon fill="black" stroke="black" points="272.02,-243.04 262.83,-237.75 266.71,-247.61 272.02,-243.04"/>
+<text text-anchor="middle" x="319.2" y="-267.8" font-family="Times,serif" font-size="14.00">refer</text>
+</g>
+</g>
+</svg>
